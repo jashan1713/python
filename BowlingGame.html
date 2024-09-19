@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module BowlingGame</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">BowlingGame</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:/Users/anuragsharma/Desktop/pyhton%202/BowlingGame.py">/Users/anuragsharma/Desktop/pyhton 2/BowlingGame.py</a></td></tr></table>
+    <p></p>
+<p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="BowlingGame.html#BowlingGame">BowlingGame</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="BowlingGame">class <strong>BowlingGame</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">A&nbsp;class&nbsp;representing&nbsp;a&nbsp;game&nbsp;of&nbsp;bowling.<br>
+&nbsp;<br>
+Attributes:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;rolls&nbsp;(list):&nbsp;A&nbsp;list&nbsp;of&nbsp;rolls&nbsp;made&nbsp;in&nbsp;the&nbsp;game.<br>
+&nbsp;<br>
+Methods:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#BowlingGame-roll">roll</a>(pins):&nbsp;Rolls&nbsp;the&nbsp;ball,&nbsp;adding&nbsp;the&nbsp;pins&nbsp;knocked&nbsp;down&nbsp;to&nbsp;the&nbsp;game.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#BowlingGame-score">score</a>():&nbsp;Calculates&nbsp;the&nbsp;total&nbsp;score&nbsp;of&nbsp;the&nbsp;game.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#BowlingGame-isStrike">isStrike</a>(rollIndex):&nbsp;Checks&nbsp;if&nbsp;a&nbsp;roll&nbsp;is&nbsp;a&nbsp;strike.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#BowlingGame-isSpare">isSpare</a>(rollIndex):&nbsp;Checks&nbsp;if&nbsp;a&nbsp;roll&nbsp;is&nbsp;a&nbsp;spare.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#BowlingGame-strikeScore">strikeScore</a>(rollIndex):&nbsp;Calculates&nbsp;the&nbsp;score&nbsp;for&nbsp;a&nbsp;strike.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#BowlingGame-spareScore">spareScore</a>(rollIndex):&nbsp;Calculates&nbsp;the&nbsp;score&nbsp;for&nbsp;a&nbsp;spare.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#BowlingGame-frameScore">frameScore</a>(rollIndex):&nbsp;Calculates&nbsp;the&nbsp;score&nbsp;for&nbsp;a&nbsp;regular&nbsp;frame.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="BowlingGame-__init__"><strong>__init__</strong></a>(self)</dt><dd><span class="code">Initializes&nbsp;a&nbsp;new&nbsp;game&nbsp;of&nbsp;bowling.</span></dd></dl>
+
+<dl><dt><a name="BowlingGame-frameScore"><strong>frameScore</strong></a>(self, rollIndex)</dt><dd><span class="code">Calculates&nbsp;the&nbsp;score&nbsp;for&nbsp;a&nbsp;regular&nbsp;frame.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;rollIndex&nbsp;(int):&nbsp;The&nbsp;index&nbsp;of&nbsp;the&nbsp;roll.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;int:&nbsp;The&nbsp;score&nbsp;for&nbsp;the&nbsp;frame.</span></dd></dl>
+
+<dl><dt><a name="BowlingGame-isSpare"><strong>isSpare</strong></a>(self, rollIndex)</dt><dd><span class="code">Checks&nbsp;if&nbsp;a&nbsp;roll&nbsp;is&nbsp;a&nbsp;spare.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;rollIndex&nbsp;(int):&nbsp;The&nbsp;index&nbsp;of&nbsp;the&nbsp;roll.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;bool:&nbsp;True&nbsp;if&nbsp;the&nbsp;roll&nbsp;is&nbsp;a&nbsp;spare,&nbsp;False&nbsp;otherwise.</span></dd></dl>
+
+<dl><dt><a name="BowlingGame-isStrike"><strong>isStrike</strong></a>(self, rollIndex)</dt><dd><span class="code">Checks&nbsp;if&nbsp;a&nbsp;roll&nbsp;is&nbsp;a&nbsp;strike.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;rollIndex&nbsp;(int):&nbsp;The&nbsp;index&nbsp;of&nbsp;the&nbsp;roll.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;bool:&nbsp;True&nbsp;if&nbsp;the&nbsp;roll&nbsp;is&nbsp;a&nbsp;strike,&nbsp;False&nbsp;otherwise.</span></dd></dl>
+
+<dl><dt><a name="BowlingGame-roll"><strong>roll</strong></a>(self, pins)</dt><dd><span class="code">Rolls&nbsp;the&nbsp;ball,&nbsp;adding&nbsp;the&nbsp;pins&nbsp;knocked&nbsp;down&nbsp;to&nbsp;the&nbsp;game.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;pins&nbsp;(int):&nbsp;The&nbsp;number&nbsp;of&nbsp;pins&nbsp;knocked&nbsp;down.</span></dd></dl>
+
+<dl><dt><a name="BowlingGame-score"><strong>score</strong></a>(self)</dt><dd><span class="code">Calculates&nbsp;the&nbsp;total&nbsp;score&nbsp;of&nbsp;the&nbsp;game.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;int:&nbsp;The&nbsp;total&nbsp;score&nbsp;of&nbsp;the&nbsp;game.</span></dd></dl>
+
+<dl><dt><a name="BowlingGame-spareScore"><strong>spareScore</strong></a>(self, rollIndex)</dt><dd><span class="code">Calculates&nbsp;the&nbsp;score&nbsp;for&nbsp;a&nbsp;spare.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;rollIndex&nbsp;(int):&nbsp;The&nbsp;index&nbsp;of&nbsp;the&nbsp;roll.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;int:&nbsp;The&nbsp;score&nbsp;for&nbsp;the&nbsp;spare.</span></dd></dl>
+
+<dl><dt><a name="BowlingGame-strikeScore"><strong>strikeScore</strong></a>(self, rollIndex)</dt><dd><span class="code">Calculates&nbsp;the&nbsp;score&nbsp;for&nbsp;a&nbsp;strike.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;rollIndex&nbsp;(int):&nbsp;The&nbsp;index&nbsp;of&nbsp;the&nbsp;roll.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;int:&nbsp;The&nbsp;score&nbsp;for&nbsp;the&nbsp;strike.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>
